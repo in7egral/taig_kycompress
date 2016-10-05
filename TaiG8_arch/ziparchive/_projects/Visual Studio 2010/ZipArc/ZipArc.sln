@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZipArc", "ZipArc.vcxproj", "{B17FB4B8-941A-4BE4-A3BE-C58C2447E871}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZipArchive", "..\ZipArchive\ZipArchive.vcxproj", "{A51CF340-B0EA-4C9B-A2FA-4D7487692EF5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug MFC MD DLL|Win32 = Debug MFC MD DLL|Win32
+		Debug MFC MD|Win32 = Debug MFC MD|Win32
+		Debug MFC MT|Win32 = Debug MFC MT|Win32
+		Debug Unicode MFC MD DLL|Win32 = Debug Unicode MFC MD DLL|Win32
+		Debug Unicode MFC MD|Win32 = Debug Unicode MFC MD|Win32
+		Debug Unicode MFC MT|Win32 = Debug Unicode MFC MT|Win32
+		Release MFC MD DLL|Win32 = Release MFC MD DLL|Win32
+		Release MFC MD|Win32 = Release MFC MD|Win32
+		Release MFC MT|Win32 = Release MFC MT|Win32
+		Release Unicode MFC MD DLL|Win32 = Release Unicode MFC MD DLL|Win32
+		Release Unicode MFC MD|Win32 = Release Unicode MFC MD|Win32
+		Release Unicode MFC MT|Win32 = Release Unicode MFC MT|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B17FB4B8-941A-4BE4-A3BE-C58C2447E871}.Debug MFC MD DLL|Win32.ActiveCfg = Debug MFC MD DLL|Win32
+		{B17FB4B8-941A-4BE4-A3BE-C58C2447E871}.Debug MFC MD DLL|Win32.Build.0 = Debug MFC MD DLL|Win32
+		{B17FB4B8-941A-4BE4-A3BE-C58C2447E871}.Debug MFC MD|Win32.ActiveCfg = Debug MFC MD|Win32
+		{B17FB4B8-941A-4BE4-A3BE-C58C2447E871}.Debug MFC MD|Win32.Build.0 = Debug MFC MD|Win32
+		{B17FB4B8-941A-4BE4-A3BE-C58C2447E871}.Debug MFC MT|Win32.ActiveCfg = Debug MFC MT|Win32
+		{B17FB4B8-941A-4BE4-A3BE-C58C2447E871}.Debug MFC MT|Win32.Build.0 = Debug MFC MT|Win32
+		{B17FB4B8-941A-4BE4-A3BE-C58C2447E871}.Debug Unicode MFC MD DLL|Win32.ActiveCfg = Debug Unicode MFC MD DLL|Win32
+		{B17FB4B8-941A-4BE4-A3BE-C58C2447E871}.Debug Unicode MFC MD DLL|Win32.Build.0 = Debug Unicode MFC MD DLL|Win32
+		{B17FB4B8-941A-4BE4-A3BE-C58C2447E871}.Debug Unicode MFC MD|Win32.ActiveCfg = Debug Unicode MFC MD|Win32
+		{B17FB4B8-941A-4BE4-A3BE-C58C2447E871}.Debug Unicode MFC MD|Win32.Build.0 = Debug Unicode MFC MD|Win32
+		{B17FB4B8-941A-4BE4-A3BE-C58C2447E871}.Debug Unicode MFC MT|Win32.ActiveCfg = Debug Unicode MFC MT|Win32
+		{B17FB4B8-941A-4BE4-A3BE-C58C2447E871}.Debug Unicode MFC MT|Win32.Build.0 = Debug Unicode MFC MT|Win32
+		{B17FB4B8-941A-4BE4-A3BE-C58C2447E871}.Release MFC MD DLL|Win32.ActiveCfg = Release MFC MD DLL|Win32
+		{B17FB4B8-941A-4BE4-A3BE-C58C2447E871}.Release MFC MD DLL|Win32.Build.0 = Release MFC MD DLL|Win32
+		{B17FB4B8-941A-4BE4-A3BE-C58C2447E871}.Release MFC MD|Win32.ActiveCfg = Release MFC MD|Win32
+		{B17FB4B8-941A-4BE4-A3BE-C58C2447E871}.Release MFC MD|Win32.Build.0 = Release MFC MD|Win32
+		{B17FB4B8-941A-4BE4-A3BE-C58C2447E871}.Release MFC MT|Win32.ActiveCfg = Release MFC MT|Win32
+		{B17FB4B8-941A-4BE4-A3BE-C58C2447E871}.Release MFC MT|Win32.Build.0 = Release MFC MT|Win32
+		{B17FB4B8-941A-4BE4-A3BE-C58C2447E871}.Release Unicode MFC MD DLL|Win32.ActiveCfg = Release Unicode MFC MD DLL|Win32
+		{B17FB4B8-941A-4BE4-A3BE-C58C2447E871}.Release Unicode MFC MD DLL|Win32.Build.0 = Release Unicode MFC MD DLL|Win32
+		{B17FB4B8-941A-4BE4-A3BE-C58C2447E871}.Release Unicode MFC MD|Win32.ActiveCfg = Release Unicode MFC MD|Win32
+		{B17FB4B8-941A-4BE4-A3BE-C58C2447E871}.Release Unicode MFC MD|Win32.Build.0 = Release Unicode MFC MD|Win32
+		{B17FB4B8-941A-4BE4-A3BE-C58C2447E871}.Release Unicode MFC MT|Win32.ActiveCfg = Release Unicode MFC MT|Win32
+		{B17FB4B8-941A-4BE4-A3BE-C58C2447E871}.Release Unicode MFC MT|Win32.Build.0 = Release Unicode MFC MT|Win32
+		{A51CF340-B0EA-4C9B-A2FA-4D7487692EF5}.Debug MFC MD DLL|Win32.ActiveCfg = Debug MFC MD DLL|Win32
+		{A51CF340-B0EA-4C9B-A2FA-4D7487692EF5}.Debug MFC MD DLL|Win32.Build.0 = Debug MFC MD DLL|Win32
+		{A51CF340-B0EA-4C9B-A2FA-4D7487692EF5}.Debug MFC MD|Win32.ActiveCfg = Debug MFC MD|Win32
+		{A51CF340-B0EA-4C9B-A2FA-4D7487692EF5}.Debug MFC MD|Win32.Build.0 = Debug MFC MD|Win32
+		{A51CF340-B0EA-4C9B-A2FA-4D7487692EF5}.Debug MFC MT|Win32.ActiveCfg = Debug MFC MT|Win32
+		{A51CF340-B0EA-4C9B-A2FA-4D7487692EF5}.Debug MFC MT|Win32.Build.0 = Debug MFC MT|Win32
+		{A51CF340-B0EA-4C9B-A2FA-4D7487692EF5}.Debug Unicode MFC MD DLL|Win32.ActiveCfg = Debug Unicode MFC MD DLL|Win32
+		{A51CF340-B0EA-4C9B-A2FA-4D7487692EF5}.Debug Unicode MFC MD DLL|Win32.Build.0 = Debug Unicode MFC MD DLL|Win32
+		{A51CF340-B0EA-4C9B-A2FA-4D7487692EF5}.Debug Unicode MFC MD|Win32.ActiveCfg = Debug Unicode MFC MD|Win32
+		{A51CF340-B0EA-4C9B-A2FA-4D7487692EF5}.Debug Unicode MFC MD|Win32.Build.0 = Debug Unicode MFC MD|Win32
+		{A51CF340-B0EA-4C9B-A2FA-4D7487692EF5}.Debug Unicode MFC MT|Win32.ActiveCfg = Debug Unicode MFC MT|Win32
+		{A51CF340-B0EA-4C9B-A2FA-4D7487692EF5}.Debug Unicode MFC MT|Win32.Build.0 = Debug Unicode MFC MT|Win32
+		{A51CF340-B0EA-4C9B-A2FA-4D7487692EF5}.Release MFC MD DLL|Win32.ActiveCfg = Release MFC MD DLL|Win32
+		{A51CF340-B0EA-4C9B-A2FA-4D7487692EF5}.Release MFC MD DLL|Win32.Build.0 = Release MFC MD DLL|Win32
+		{A51CF340-B0EA-4C9B-A2FA-4D7487692EF5}.Release MFC MD|Win32.ActiveCfg = Release MFC MD|Win32
+		{A51CF340-B0EA-4C9B-A2FA-4D7487692EF5}.Release MFC MD|Win32.Build.0 = Release MFC MD|Win32
+		{A51CF340-B0EA-4C9B-A2FA-4D7487692EF5}.Release MFC MT|Win32.ActiveCfg = Release MFC MT|Win32
+		{A51CF340-B0EA-4C9B-A2FA-4D7487692EF5}.Release MFC MT|Win32.Build.0 = Release MFC MT|Win32
+		{A51CF340-B0EA-4C9B-A2FA-4D7487692EF5}.Release Unicode MFC MD DLL|Win32.ActiveCfg = Release Unicode MFC MD DLL|Win32
+		{A51CF340-B0EA-4C9B-A2FA-4D7487692EF5}.Release Unicode MFC MD DLL|Win32.Build.0 = Release Unicode MFC MD DLL|Win32
+		{A51CF340-B0EA-4C9B-A2FA-4D7487692EF5}.Release Unicode MFC MD|Win32.ActiveCfg = Release Unicode MFC MD|Win32
+		{A51CF340-B0EA-4C9B-A2FA-4D7487692EF5}.Release Unicode MFC MD|Win32.Build.0 = Release Unicode MFC MD|Win32
+		{A51CF340-B0EA-4C9B-A2FA-4D7487692EF5}.Release Unicode MFC MT|Win32.ActiveCfg = Release Unicode MFC MT|Win32
+		{A51CF340-B0EA-4C9B-A2FA-4D7487692EF5}.Release Unicode MFC MT|Win32.Build.0 = Release Unicode MFC MT|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

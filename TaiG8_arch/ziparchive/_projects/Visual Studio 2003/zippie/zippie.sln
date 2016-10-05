@@ -1,0 +1,51 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zippie", "zippie.vcproj", "{5552FB84-14AC-40DE-B0B1-B194B6815BAF}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZipArchive", "..\ZipArchive\ZipArchive.vcproj", "{A51CF340-B0EA-4C9B-A2FA-4D7487692EF5}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug STL MD = Debug STL MD
+		Debug STL MD DLL = Debug STL MD DLL
+		Debug STL MT = Debug STL MT
+		Release STL MD = Release STL MD
+		Release STL MD DLL = Release STL MD DLL
+		Release STL MT = Release STL MT
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{5552FB84-14AC-40DE-B0B1-B194B6815BAF}.Debug STL MD.ActiveCfg = Debug STL MD|Win32
+		{5552FB84-14AC-40DE-B0B1-B194B6815BAF}.Debug STL MD.Build.0 = Debug STL MD|Win32
+		{5552FB84-14AC-40DE-B0B1-B194B6815BAF}.Debug STL MD DLL.ActiveCfg = Debug STL MD DLL|Win32
+		{5552FB84-14AC-40DE-B0B1-B194B6815BAF}.Debug STL MD DLL.Build.0 = Debug STL MD DLL|Win32
+		{5552FB84-14AC-40DE-B0B1-B194B6815BAF}.Debug STL MT.ActiveCfg = Debug STL MT|Win32
+		{5552FB84-14AC-40DE-B0B1-B194B6815BAF}.Debug STL MT.Build.0 = Debug STL MT|Win32
+		{5552FB84-14AC-40DE-B0B1-B194B6815BAF}.Release STL MD.ActiveCfg = Release STL MD|Win32
+		{5552FB84-14AC-40DE-B0B1-B194B6815BAF}.Release STL MD.Build.0 = Release STL MD|Win32
+		{5552FB84-14AC-40DE-B0B1-B194B6815BAF}.Release STL MD DLL.ActiveCfg = Release STL MD DLL|Win32
+		{5552FB84-14AC-40DE-B0B1-B194B6815BAF}.Release STL MD DLL.Build.0 = Release STL MD DLL|Win32
+		{5552FB84-14AC-40DE-B0B1-B194B6815BAF}.Release STL MT.ActiveCfg = Release STL MT|Win32
+		{5552FB84-14AC-40DE-B0B1-B194B6815BAF}.Release STL MT.Build.0 = Release STL MT|Win32
+		{A51CF340-B0EA-4C9B-A2FA-4D7487692EF5}.Debug STL MD.ActiveCfg = Debug STL MD|Win32
+		{A51CF340-B0EA-4C9B-A2FA-4D7487692EF5}.Debug STL MD.Build.0 = Debug STL MD|Win32
+		{A51CF340-B0EA-4C9B-A2FA-4D7487692EF5}.Debug STL MD DLL.ActiveCfg = Debug STL MD DLL|Win32
+		{A51CF340-B0EA-4C9B-A2FA-4D7487692EF5}.Debug STL MD DLL.Build.0 = Debug STL MD DLL|Win32
+		{A51CF340-B0EA-4C9B-A2FA-4D7487692EF5}.Debug STL MT.ActiveCfg = Debug STL MT|Win32
+		{A51CF340-B0EA-4C9B-A2FA-4D7487692EF5}.Debug STL MT.Build.0 = Debug STL MT|Win32
+		{A51CF340-B0EA-4C9B-A2FA-4D7487692EF5}.Release STL MD.ActiveCfg = Release STL MD|Win32
+		{A51CF340-B0EA-4C9B-A2FA-4D7487692EF5}.Release STL MD.Build.0 = Release STL MD|Win32
+		{A51CF340-B0EA-4C9B-A2FA-4D7487692EF5}.Release STL MD DLL.ActiveCfg = Release STL MD DLL|Win32
+		{A51CF340-B0EA-4C9B-A2FA-4D7487692EF5}.Release STL MD DLL.Build.0 = Release STL MD DLL|Win32
+		{A51CF340-B0EA-4C9B-A2FA-4D7487692EF5}.Release STL MT.ActiveCfg = Release STL MT|Win32
+		{A51CF340-B0EA-4C9B-A2FA-4D7487692EF5}.Release STL MT.Build.0 = Release STL MT|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

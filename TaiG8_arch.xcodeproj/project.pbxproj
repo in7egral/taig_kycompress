@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84496C7F1DA5331C0007D27A /* kylz.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84496C7D1DA5331C0007D27A /* kylz.cpp */; };
+		84B4F8EF1DA4EB280047738C /* adler32.c in Sources */ = {isa = PBXBuildFile; fileRef = 84B4F8DA1DA4EB280047738C /* adler32.c */; };
+		84B4F8F01DA4EB280047738C /* compress.c in Sources */ = {isa = PBXBuildFile; fileRef = 84B4F8DB1DA4EB280047738C /* compress.c */; };
+		84B4F8F11DA4EB280047738C /* crc32.c in Sources */ = {isa = PBXBuildFile; fileRef = 84B4F8DC1DA4EB280047738C /* crc32.c */; };
+		84B4F8F21DA4EB280047738C /* deflate.c in Sources */ = {isa = PBXBuildFile; fileRef = 84B4F8DE1DA4EB280047738C /* deflate.c */; };
+		84B4F8F31DA4EB280047738C /* infback.c in Sources */ = {isa = PBXBuildFile; fileRef = 84B4F8E01DA4EB280047738C /* infback.c */; };
+		84B4F8F41DA4EB280047738C /* inffast.c in Sources */ = {isa = PBXBuildFile; fileRef = 84B4F8E11DA4EB280047738C /* inffast.c */; };
+		84B4F8F51DA4EB280047738C /* inflate.c in Sources */ = {isa = PBXBuildFile; fileRef = 84B4F8E41DA4EB280047738C /* inflate.c */; };
+		84B4F8F61DA4EB280047738C /* inftrees.c in Sources */ = {isa = PBXBuildFile; fileRef = 84B4F8E61DA4EB280047738C /* inftrees.c */; };
+		84B4F8F71DA4EB280047738C /* trees.c in Sources */ = {isa = PBXBuildFile; fileRef = 84B4F8E81DA4EB280047738C /* trees.c */; };
+		84B4F8F81DA4EB280047738C /* uncompr.c in Sources */ = {isa = PBXBuildFile; fileRef = 84B4F8EA1DA4EB280047738C /* uncompr.c */; };
+		84B4F8F91DA4EB280047738C /* zutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 84B4F8ED1DA4EB280047738C /* zutil.c */; };
+		84CBE36E1DA549D000BA93D3 /* Lz77.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84CBE36D1DA549D000BA93D3 /* Lz77.cpp */; };
+		84CD2F741DA44186006DFDBE /* ZipMemFileEx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84CD2F721DA44186006DFDBE /* ZipMemFileEx.cpp */; };
+		84F71E8A1DA37101002D85E5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84F71E891DA37101002D85E5 /* main.cpp */; };
+		84F71EF51DA37148002D85E5 /* Aes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84F71E941DA37148002D85E5 /* Aes.cpp */; };
+		84F71EF61DA37148002D85E5 /* BaseLibCompressor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84F71E971DA37148002D85E5 /* BaseLibCompressor.cpp */; };
+		84F71EF71DA37148002D85E5 /* Bzip2Compressor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84F71E9C1DA37148002D85E5 /* Bzip2Compressor.cpp */; };
+		84F71EF81DA37148002D85E5 /* DeflateCompressor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84F71E9E1DA37148002D85E5 /* DeflateCompressor.cpp */; };
+		84F71EF91DA37148002D85E5 /* DirEnumerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84F71EA01DA37148002D85E5 /* DirEnumerator.cpp */; };
+		84F71EFA1DA37148002D85E5 /* FileFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84F71EA21DA37148002D85E5 /* FileFilter.cpp */; };
+		84F71EFB1DA37148002D85E5 /* Hmac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84F71EA51DA37148002D85E5 /* Hmac.cpp */; };
+		84F71EFC1DA37148002D85E5 /* RandomPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84F71EA81DA37148002D85E5 /* RandomPool.cpp */; };
+		84F71EFD1DA37148002D85E5 /* Sha1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84F71EAB1DA37148002D85E5 /* Sha1.cpp */; };
+		84F71EFE1DA37148002D85E5 /* Wildcard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84F71EB01DA37148002D85E5 /* Wildcard.cpp */; };
+		84F71EFF1DA37148002D85E5 /* ZipAesCryptograph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84F71EB31DA37148002D85E5 /* ZipAesCryptograph.cpp */; };
+		84F71F001DA37148002D85E5 /* ZipArchive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84F71EB51DA37148002D85E5 /* ZipArchive.cpp */; };
+		84F71F011DA37148002D85E5 /* ZipAutoBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84F71EBB1DA37148002D85E5 /* ZipAutoBuffer.cpp */; };
+		84F71F021DA37148002D85E5 /* ZipCentralDir.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84F71EC01DA37148002D85E5 /* ZipCentralDir.cpp */; };
+		84F71F031DA37148002D85E5 /* ZipCompatibility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84F71EC51DA37148002D85E5 /* ZipCompatibility.cpp */; };
+		84F71F041DA37148002D85E5 /* ZipCompressor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84F71EC71DA37148002D85E5 /* ZipCompressor.cpp */; };
+		84F71F051DA37148002D85E5 /* ZipCrc32Cryptograph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84F71EC91DA37148002D85E5 /* ZipCrc32Cryptograph.cpp */; };
+		84F71F061DA37148002D85E5 /* ZipCryptograph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84F71ECB1DA37148002D85E5 /* ZipCryptograph.cpp */; };
+		84F71F071DA37148002D85E5 /* ZipException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84F71ECD1DA37148002D85E5 /* ZipException.cpp */; };
+		84F71F081DA37148002D85E5 /* ZipExtraData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84F71ED01DA37148002D85E5 /* ZipExtraData.cpp */; };
+		84F71F091DA37148002D85E5 /* ZipExtraField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84F71ED21DA37148002D85E5 /* ZipExtraField.cpp */; };
+		84F71F0A1DA37148002D85E5 /* ZipFile_mfc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84F71ED41DA37148002D85E5 /* ZipFile_mfc.cpp */; };
+		84F71F0B1DA37148002D85E5 /* ZipFile_stl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84F71ED61DA37148002D85E5 /* ZipFile_stl.cpp */; };
+		84F71F0D1DA37148002D85E5 /* ZipFileHeader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84F71EDB1DA37148002D85E5 /* ZipFileHeader.cpp */; };
+		84F71F0E1DA37148002D85E5 /* ZipMemFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84F71EE01DA37148002D85E5 /* ZipMemFile.cpp */; };
+		84F71F0F1DA37148002D85E5 /* ZipPathComponent_lnx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84F71EE51DA37148002D85E5 /* ZipPathComponent_lnx.cpp */; };
+		84F71F111DA37148002D85E5 /* ZipPlatform_lnx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84F71EE81DA37148002D85E5 /* ZipPlatform_lnx.cpp */; };
+		84F71F131DA37148002D85E5 /* ZipPlatformComm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84F71EEB1DA37148002D85E5 /* ZipPlatformComm.cpp */; };
+		84F71F141DA37148002D85E5 /* ZipStorage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84F71EED1DA37148002D85E5 /* ZipStorage.cpp */; };
+		84F71F151DA37148002D85E5 /* ZipString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84F71EF11DA37148002D85E5 /* ZipString.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		84F71E841DA37100002D85E5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		84496C7B1DA532990007D27A /* Lz77.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Lz77.h; path = libkycompress/Lz77.h; sourceTree = "<group>"; };
+		84496C7D1DA5331C0007D27A /* kylz.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = kylz.cpp; path = libkycompress/kylz.cpp; sourceTree = "<group>"; };
+		84496C7E1DA5331C0007D27A /* kylz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kylz.h; path = libkycompress/kylz.h; sourceTree = "<group>"; };
+		84B4F8DA1DA4EB280047738C /* adler32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = adler32.c; path = ziparchive/ZipArchive/zlib/adler32.c; sourceTree = "<group>"; };
+		84B4F8DB1DA4EB280047738C /* compress.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = compress.c; path = ziparchive/ZipArchive/zlib/compress.c; sourceTree = "<group>"; };
+		84B4F8DC1DA4EB280047738C /* crc32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = crc32.c; path = ziparchive/ZipArchive/zlib/crc32.c; sourceTree = "<group>"; };
+		84B4F8DD1DA4EB280047738C /* crc32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = crc32.h; path = ziparchive/ZipArchive/zlib/crc32.h; sourceTree = "<group>"; };
+		84B4F8DE1DA4EB280047738C /* deflate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = deflate.c; path = ziparchive/ZipArchive/zlib/deflate.c; sourceTree = "<group>"; };
+		84B4F8DF1DA4EB280047738C /* deflate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = deflate.h; path = ziparchive/ZipArchive/zlib/deflate.h; sourceTree = "<group>"; };
+		84B4F8E01DA4EB280047738C /* infback.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = infback.c; path = ziparchive/ZipArchive/zlib/infback.c; sourceTree = "<group>"; };
+		84B4F8E11DA4EB280047738C /* inffast.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = inffast.c; path = ziparchive/ZipArchive/zlib/inffast.c; sourceTree = "<group>"; };
+		84B4F8E21DA4EB280047738C /* inffast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = inffast.h; path = ziparchive/ZipArchive/zlib/inffast.h; sourceTree = "<group>"; };
+		84B4F8E31DA4EB280047738C /* inffixed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = inffixed.h; path = ziparchive/ZipArchive/zlib/inffixed.h; sourceTree = "<group>"; };
+		84B4F8E41DA4EB280047738C /* inflate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = inflate.c; path = ziparchive/ZipArchive/zlib/inflate.c; sourceTree = "<group>"; };
+		84B4F8E51DA4EB280047738C /* inflate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = inflate.h; path = ziparchive/ZipArchive/zlib/inflate.h; sourceTree = "<group>"; };
+		84B4F8E61DA4EB280047738C /* inftrees.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = inftrees.c; path = ziparchive/ZipArchive/zlib/inftrees.c; sourceTree = "<group>"; };
+		84B4F8E71DA4EB280047738C /* inftrees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = inftrees.h; path = ziparchive/ZipArchive/zlib/inftrees.h; sourceTree = "<group>"; };
+		84B4F8E81DA4EB280047738C /* trees.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = trees.c; path = ziparchive/ZipArchive/zlib/trees.c; sourceTree = "<group>"; };
+		84B4F8E91DA4EB280047738C /* trees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = trees.h; path = ziparchive/ZipArchive/zlib/trees.h; sourceTree = "<group>"; };
+		84B4F8EA1DA4EB280047738C /* uncompr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = uncompr.c; path = ziparchive/ZipArchive/zlib/uncompr.c; sourceTree = "<group>"; };
+		84B4F8EB1DA4EB280047738C /* zconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zconf.h; path = ziparchive/ZipArchive/zlib/zconf.h; sourceTree = "<group>"; };
+		84B4F8EC1DA4EB280047738C /* zlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zlib.h; path = ziparchive/ZipArchive/zlib/zlib.h; sourceTree = "<group>"; };
+		84B4F8ED1DA4EB280047738C /* zutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = zutil.c; path = ziparchive/ZipArchive/zlib/zutil.c; sourceTree = "<group>"; };
+		84B4F8EE1DA4EB280047738C /* zutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zutil.h; path = ziparchive/ZipArchive/zlib/zutil.h; sourceTree = "<group>"; };
+		84CBE36D1DA549D000BA93D3 /* Lz77.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Lz77.cpp; path = libkycompress/Lz77.cpp; sourceTree = "<group>"; };
+		84CD2F721DA44186006DFDBE /* ZipMemFileEx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZipMemFileEx.cpp; sourceTree = "<group>"; };
+		84CD2F731DA44186006DFDBE /* ZipMemFileEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipMemFileEx.h; sourceTree = "<group>"; };
+		84F71E861DA37101002D85E5 /* TaiG8_arch */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TaiG8_arch; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F71E891DA37101002D85E5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		84F71E911DA37148002D85E5 /* _features.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _features.h; path = ziparchive/ZipArchive/_features.h; sourceTree = "<group>"; };
+		84F71E921DA37148002D85E5 /* _platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _platform.h; path = ziparchive/ZipArchive/_platform.h; sourceTree = "<group>"; };
+		84F71E941DA37148002D85E5 /* Aes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Aes.cpp; path = ziparchive/ZipArchive/Aes.cpp; sourceTree = "<group>"; };
+		84F71E951DA37148002D85E5 /* Aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Aes.h; path = ziparchive/ZipArchive/Aes.h; sourceTree = "<group>"; };
+		84F71E971DA37148002D85E5 /* BaseLibCompressor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BaseLibCompressor.cpp; path = ziparchive/ZipArchive/BaseLibCompressor.cpp; sourceTree = "<group>"; };
+		84F71E981DA37148002D85E5 /* BaseLibCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseLibCompressor.h; path = ziparchive/ZipArchive/BaseLibCompressor.h; sourceTree = "<group>"; };
+		84F71E991DA37148002D85E5 /* BitFlag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BitFlag.h; path = ziparchive/ZipArchive/BitFlag.h; sourceTree = "<group>"; };
+		84F71E9A1DA37148002D85E5 /* BytesWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BytesWriter.h; path = ziparchive/ZipArchive/BytesWriter.h; sourceTree = "<group>"; };
+		84F71E9C1DA37148002D85E5 /* Bzip2Compressor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Bzip2Compressor.cpp; path = ziparchive/ZipArchive/Bzip2Compressor.cpp; sourceTree = "<group>"; };
+		84F71E9D1DA37148002D85E5 /* Bzip2Compressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bzip2Compressor.h; path = ziparchive/ZipArchive/Bzip2Compressor.h; sourceTree = "<group>"; };
+		84F71E9E1DA37148002D85E5 /* DeflateCompressor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DeflateCompressor.cpp; path = ziparchive/ZipArchive/DeflateCompressor.cpp; sourceTree = "<group>"; };
+		84F71E9F1DA37148002D85E5 /* DeflateCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeflateCompressor.h; path = ziparchive/ZipArchive/DeflateCompressor.h; sourceTree = "<group>"; };
+		84F71EA01DA37148002D85E5 /* DirEnumerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DirEnumerator.cpp; path = ziparchive/ZipArchive/DirEnumerator.cpp; sourceTree = "<group>"; };
+		84F71EA11DA37148002D85E5 /* DirEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DirEnumerator.h; path = ziparchive/ZipArchive/DirEnumerator.h; sourceTree = "<group>"; };
+		84F71EA21DA37148002D85E5 /* FileFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FileFilter.cpp; path = ziparchive/ZipArchive/FileFilter.cpp; sourceTree = "<group>"; };
+		84F71EA31DA37148002D85E5 /* FileFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileFilter.h; path = ziparchive/ZipArchive/FileFilter.h; sourceTree = "<group>"; };
+		84F71EA41DA37148002D85E5 /* FileInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileInfo.h; path = ziparchive/ZipArchive/FileInfo.h; sourceTree = "<group>"; };
+		84F71EA51DA37148002D85E5 /* Hmac.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Hmac.cpp; path = ziparchive/ZipArchive/Hmac.cpp; sourceTree = "<group>"; };
+		84F71EA61DA37148002D85E5 /* Hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Hmac.h; path = ziparchive/ZipArchive/Hmac.h; sourceTree = "<group>"; };
+		84F71EA81DA37148002D85E5 /* RandomPool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RandomPool.cpp; path = ziparchive/ZipArchive/RandomPool.cpp; sourceTree = "<group>"; };
+		84F71EA91DA37148002D85E5 /* RandomPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RandomPool.h; path = ziparchive/ZipArchive/RandomPool.h; sourceTree = "<group>"; };
+		84F71EAA1DA37148002D85E5 /* resource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = resource.h; path = ziparchive/ZipArchive/resource.h; sourceTree = "<group>"; };
+		84F71EAB1DA37148002D85E5 /* Sha1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Sha1.cpp; path = ziparchive/ZipArchive/Sha1.cpp; sourceTree = "<group>"; };
+		84F71EAC1DA37148002D85E5 /* Sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sha1.h; path = ziparchive/ZipArchive/Sha1.h; sourceTree = "<group>"; };
+		84F71EAD1DA37148002D85E5 /* std_mfc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = std_mfc.h; path = ziparchive/ZipArchive/std_mfc.h; sourceTree = "<group>"; };
+		84F71EAE1DA37148002D85E5 /* std_stl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = std_stl.h; path = ziparchive/ZipArchive/std_stl.h; sourceTree = "<group>"; };
+		84F71EAF1DA37148002D85E5 /* stdafx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stdafx.h; path = ziparchive/ZipArchive/stdafx.h; sourceTree = "<group>"; };
+		84F71EB01DA37148002D85E5 /* Wildcard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Wildcard.cpp; path = ziparchive/ZipArchive/Wildcard.cpp; sourceTree = "<group>"; };
+		84F71EB11DA37148002D85E5 /* Wildcard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Wildcard.h; path = ziparchive/ZipArchive/Wildcard.h; sourceTree = "<group>"; };
+		84F71EB21DA37148002D85E5 /* ZipAbstractFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipAbstractFile.h; path = ziparchive/ZipArchive/ZipAbstractFile.h; sourceTree = "<group>"; };
+		84F71EB31DA37148002D85E5 /* ZipAesCryptograph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ZipAesCryptograph.cpp; path = ziparchive/ZipArchive/ZipAesCryptograph.cpp; sourceTree = "<group>"; };
+		84F71EB41DA37148002D85E5 /* ZipAesCryptograph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipAesCryptograph.h; path = ziparchive/ZipArchive/ZipAesCryptograph.h; sourceTree = "<group>"; };
+		84F71EB51DA37148002D85E5 /* ZipArchive.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ZipArchive.cpp; path = ziparchive/ZipArchive/ZipArchive.cpp; sourceTree = "<group>"; };
+		84F71EB61DA37148002D85E5 /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipArchive.h; path = ziparchive/ZipArchive/ZipArchive.h; sourceTree = "<group>"; };
+		84F71EBB1DA37148002D85E5 /* ZipAutoBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ZipAutoBuffer.cpp; path = ziparchive/ZipArchive/ZipAutoBuffer.cpp; sourceTree = "<group>"; };
+		84F71EBC1DA37148002D85E5 /* ZipAutoBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipAutoBuffer.h; path = ziparchive/ZipArchive/ZipAutoBuffer.h; sourceTree = "<group>"; };
+		84F71EBD1DA37148002D85E5 /* ZipBaseException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipBaseException.h; path = ziparchive/ZipArchive/ZipBaseException.h; sourceTree = "<group>"; };
+		84F71EBE1DA37148002D85E5 /* ZipCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipCallback.h; path = ziparchive/ZipArchive/ZipCallback.h; sourceTree = "<group>"; };
+		84F71EBF1DA37148002D85E5 /* ZipCallbackProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipCallbackProvider.h; path = ziparchive/ZipArchive/ZipCallbackProvider.h; sourceTree = "<group>"; };
+		84F71EC01DA37148002D85E5 /* ZipCentralDir.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ZipCentralDir.cpp; path = ziparchive/ZipArchive/ZipCentralDir.cpp; sourceTree = "<group>"; };
+		84F71EC11DA37148002D85E5 /* ZipCentralDir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipCentralDir.h; path = ziparchive/ZipArchive/ZipCentralDir.h; sourceTree = "<group>"; };
+		84F71EC21DA37148002D85E5 /* ZipCollections_mfc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipCollections_mfc.h; path = ziparchive/ZipArchive/ZipCollections_mfc.h; sourceTree = "<group>"; };
+		84F71EC31DA37148002D85E5 /* ZipCollections_stl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipCollections_stl.h; path = ziparchive/ZipArchive/ZipCollections_stl.h; sourceTree = "<group>"; };
+		84F71EC41DA37148002D85E5 /* ZipCollections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipCollections.h; path = ziparchive/ZipArchive/ZipCollections.h; sourceTree = "<group>"; };
+		84F71EC51DA37148002D85E5 /* ZipCompatibility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ZipCompatibility.cpp; path = ziparchive/ZipArchive/ZipCompatibility.cpp; sourceTree = "<group>"; };
+		84F71EC61DA37148002D85E5 /* ZipCompatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipCompatibility.h; path = ziparchive/ZipArchive/ZipCompatibility.h; sourceTree = "<group>"; };
+		84F71EC71DA37148002D85E5 /* ZipCompressor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ZipCompressor.cpp; path = ziparchive/ZipArchive/ZipCompressor.cpp; sourceTree = "<group>"; };
+		84F71EC81DA37148002D85E5 /* ZipCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipCompressor.h; path = ziparchive/ZipArchive/ZipCompressor.h; sourceTree = "<group>"; };
+		84F71EC91DA37148002D85E5 /* ZipCrc32Cryptograph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ZipCrc32Cryptograph.cpp; path = ziparchive/ZipArchive/ZipCrc32Cryptograph.cpp; sourceTree = "<group>"; };
+		84F71ECA1DA37148002D85E5 /* ZipCrc32Cryptograph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipCrc32Cryptograph.h; path = ziparchive/ZipArchive/ZipCrc32Cryptograph.h; sourceTree = "<group>"; };
+		84F71ECB1DA37148002D85E5 /* ZipCryptograph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ZipCryptograph.cpp; path = ziparchive/ZipArchive/ZipCryptograph.cpp; sourceTree = "<group>"; };
+		84F71ECC1DA37148002D85E5 /* ZipCryptograph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipCryptograph.h; path = ziparchive/ZipArchive/ZipCryptograph.h; sourceTree = "<group>"; };
+		84F71ECD1DA37148002D85E5 /* ZipException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ZipException.cpp; path = ziparchive/ZipArchive/ZipException.cpp; sourceTree = "<group>"; };
+		84F71ECE1DA37148002D85E5 /* ZipException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipException.h; path = ziparchive/ZipArchive/ZipException.h; sourceTree = "<group>"; };
+		84F71ECF1DA37148002D85E5 /* ZipExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipExport.h; path = ziparchive/ZipArchive/ZipExport.h; sourceTree = "<group>"; };
+		84F71ED01DA37148002D85E5 /* ZipExtraData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ZipExtraData.cpp; path = ziparchive/ZipArchive/ZipExtraData.cpp; sourceTree = "<group>"; };
+		84F71ED11DA37148002D85E5 /* ZipExtraData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipExtraData.h; path = ziparchive/ZipArchive/ZipExtraData.h; sourceTree = "<group>"; };
+		84F71ED21DA37148002D85E5 /* ZipExtraField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ZipExtraField.cpp; path = ziparchive/ZipArchive/ZipExtraField.cpp; sourceTree = "<group>"; };
+		84F71ED31DA37148002D85E5 /* ZipExtraField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipExtraField.h; path = ziparchive/ZipArchive/ZipExtraField.h; sourceTree = "<group>"; };
+		84F71ED41DA37148002D85E5 /* ZipFile_mfc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ZipFile_mfc.cpp; path = ziparchive/ZipArchive/ZipFile_mfc.cpp; sourceTree = "<group>"; };
+		84F71ED51DA37148002D85E5 /* ZipFile_mfc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipFile_mfc.h; path = ziparchive/ZipArchive/ZipFile_mfc.h; sourceTree = "<group>"; };
+		84F71ED61DA37148002D85E5 /* ZipFile_stl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ZipFile_stl.cpp; path = ziparchive/ZipArchive/ZipFile_stl.cpp; sourceTree = "<group>"; };
+		84F71ED71DA37148002D85E5 /* ZipFile_stl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipFile_stl.h; path = ziparchive/ZipArchive/ZipFile_stl.h; sourceTree = "<group>"; };
+		84F71EDA1DA37148002D85E5 /* ZipFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipFile.h; path = ziparchive/ZipArchive/ZipFile.h; sourceTree = "<group>"; };
+		84F71EDB1DA37148002D85E5 /* ZipFileHeader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ZipFileHeader.cpp; path = ziparchive/ZipArchive/ZipFileHeader.cpp; sourceTree = "<group>"; };
+		84F71EDC1DA37148002D85E5 /* ZipFileHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipFileHeader.h; path = ziparchive/ZipArchive/ZipFileHeader.h; sourceTree = "<group>"; };
+		84F71EDD1DA37148002D85E5 /* ZipFileMapping_lnx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipFileMapping_lnx.h; path = ziparchive/ZipArchive/ZipFileMapping_lnx.h; sourceTree = "<group>"; };
+		84F71EDE1DA37148002D85E5 /* ZipFileMapping_win.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipFileMapping_win.h; path = ziparchive/ZipArchive/ZipFileMapping_win.h; sourceTree = "<group>"; };
+		84F71EDF1DA37148002D85E5 /* ZipFileMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipFileMapping.h; path = ziparchive/ZipArchive/ZipFileMapping.h; sourceTree = "<group>"; };
+		84F71EE01DA37148002D85E5 /* ZipMemFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ZipMemFile.cpp; path = ziparchive/ZipArchive/ZipMemFile.cpp; sourceTree = "<group>"; };
+		84F71EE11DA37148002D85E5 /* ZipMemFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipMemFile.h; path = ziparchive/ZipArchive/ZipMemFile.h; sourceTree = "<group>"; };
+		84F71EE21DA37148002D85E5 /* ZipMutex_lnx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipMutex_lnx.h; path = ziparchive/ZipArchive/ZipMutex_lnx.h; sourceTree = "<group>"; };
+		84F71EE31DA37148002D85E5 /* ZipMutex_win.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipMutex_win.h; path = ziparchive/ZipArchive/ZipMutex_win.h; sourceTree = "<group>"; };
+		84F71EE41DA37148002D85E5 /* ZipMutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipMutex.h; path = ziparchive/ZipArchive/ZipMutex.h; sourceTree = "<group>"; };
+		84F71EE51DA37148002D85E5 /* ZipPathComponent_lnx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ZipPathComponent_lnx.cpp; path = ziparchive/ZipArchive/ZipPathComponent_lnx.cpp; sourceTree = "<group>"; };
+		84F71EE71DA37148002D85E5 /* ZipPathComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipPathComponent.h; path = ziparchive/ZipArchive/ZipPathComponent.h; sourceTree = "<group>"; };
+		84F71EE81DA37148002D85E5 /* ZipPlatform_lnx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ZipPlatform_lnx.cpp; path = ziparchive/ZipArchive/ZipPlatform_lnx.cpp; sourceTree = "<group>"; };
+		84F71EEA1DA37148002D85E5 /* ZipPlatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipPlatform.h; path = ziparchive/ZipArchive/ZipPlatform.h; sourceTree = "<group>"; };
+		84F71EEB1DA37148002D85E5 /* ZipPlatformComm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ZipPlatformComm.cpp; path = ziparchive/ZipArchive/ZipPlatformComm.cpp; sourceTree = "<group>"; };
+		84F71EEC1DA37148002D85E5 /* ZipSplitNamesHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipSplitNamesHandler.h; path = ziparchive/ZipArchive/ZipSplitNamesHandler.h; sourceTree = "<group>"; };
+		84F71EED1DA37148002D85E5 /* ZipStorage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ZipStorage.cpp; path = ziparchive/ZipArchive/ZipStorage.cpp; sourceTree = "<group>"; };
+		84F71EEE1DA37148002D85E5 /* ZipStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipStorage.h; path = ziparchive/ZipArchive/ZipStorage.h; sourceTree = "<group>"; };
+		84F71EEF1DA37148002D85E5 /* ZipString_mfc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipString_mfc.h; path = ziparchive/ZipArchive/ZipString_mfc.h; sourceTree = "<group>"; };
+		84F71EF01DA37148002D85E5 /* ZipString_stl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipString_stl.h; path = ziparchive/ZipArchive/ZipString_stl.h; sourceTree = "<group>"; };
+		84F71EF11DA37148002D85E5 /* ZipString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ZipString.cpp; path = ziparchive/ZipArchive/ZipString.cpp; sourceTree = "<group>"; };
+		84F71EF21DA37148002D85E5 /* ZipString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipString.h; path = ziparchive/ZipArchive/ZipString.h; sourceTree = "<group>"; };
+		84F71EF31DA37148002D85E5 /* ZipStringStoreSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipStringStoreSettings.h; path = ziparchive/ZipArchive/ZipStringStoreSettings.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84F71E831DA37100002D85E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84496C791DA531E90007D27A /* libkycompress */ = {
+			isa = PBXGroup;
+			children = (
+				84CBE36D1DA549D000BA93D3 /* Lz77.cpp */,
+				84496C7B1DA532990007D27A /* Lz77.h */,
+				84496C7D1DA5331C0007D27A /* kylz.cpp */,
+				84496C7E1DA5331C0007D27A /* kylz.h */,
+			);
+			name = libkycompress;
+			sourceTree = "<group>";
+		};
+		84B4F8D91DA4EB150047738C /* zlib */ = {
+			isa = PBXGroup;
+			children = (
+				84B4F8DA1DA4EB280047738C /* adler32.c */,
+				84B4F8DB1DA4EB280047738C /* compress.c */,
+				84B4F8DC1DA4EB280047738C /* crc32.c */,
+				84B4F8DD1DA4EB280047738C /* crc32.h */,
+				84B4F8DE1DA4EB280047738C /* deflate.c */,
+				84B4F8DF1DA4EB280047738C /* deflate.h */,
+				84B4F8E01DA4EB280047738C /* infback.c */,
+				84B4F8E11DA4EB280047738C /* inffast.c */,
+				84B4F8E21DA4EB280047738C /* inffast.h */,
+				84B4F8E31DA4EB280047738C /* inffixed.h */,
+				84B4F8E41DA4EB280047738C /* inflate.c */,
+				84B4F8E51DA4EB280047738C /* inflate.h */,
+				84B4F8E61DA4EB280047738C /* inftrees.c */,
+				84B4F8E71DA4EB280047738C /* inftrees.h */,
+				84B4F8E81DA4EB280047738C /* trees.c */,
+				84B4F8E91DA4EB280047738C /* trees.h */,
+				84B4F8EA1DA4EB280047738C /* uncompr.c */,
+				84B4F8EB1DA4EB280047738C /* zconf.h */,
+				84B4F8EC1DA4EB280047738C /* zlib.h */,
+				84B4F8ED1DA4EB280047738C /* zutil.c */,
+				84B4F8EE1DA4EB280047738C /* zutil.h */,
+			);
+			name = zlib;
+			sourceTree = "<group>";
+		};
+		84F71E7D1DA37100002D85E5 = {
+			isa = PBXGroup;
+			children = (
+				84F71E881DA37101002D85E5 /* TaiG8_arch */,
+				84F71E871DA37101002D85E5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84F71E871DA37101002D85E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84F71E861DA37101002D85E5 /* TaiG8_arch */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84F71E881DA37101002D85E5 /* TaiG8_arch */ = {
+			isa = PBXGroup;
+			children = (
+				84496C791DA531E90007D27A /* libkycompress */,
+				84B4F8D91DA4EB150047738C /* zlib */,
+				84F71E901DA37135002D85E5 /* ZipArchive */,
+				84F71E891DA37101002D85E5 /* main.cpp */,
+				84CD2F721DA44186006DFDBE /* ZipMemFileEx.cpp */,
+				84CD2F731DA44186006DFDBE /* ZipMemFileEx.h */,
+			);
+			path = TaiG8_arch;
+			sourceTree = "<group>";
+		};
+		84F71E901DA37135002D85E5 /* ZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				84F71E911DA37148002D85E5 /* _features.h */,
+				84F71E921DA37148002D85E5 /* _platform.h */,
+				84F71E941DA37148002D85E5 /* Aes.cpp */,
+				84F71E951DA37148002D85E5 /* Aes.h */,
+				84F71E971DA37148002D85E5 /* BaseLibCompressor.cpp */,
+				84F71E981DA37148002D85E5 /* BaseLibCompressor.h */,
+				84F71E991DA37148002D85E5 /* BitFlag.h */,
+				84F71E9A1DA37148002D85E5 /* BytesWriter.h */,
+				84F71E9C1DA37148002D85E5 /* Bzip2Compressor.cpp */,
+				84F71E9D1DA37148002D85E5 /* Bzip2Compressor.h */,
+				84F71E9E1DA37148002D85E5 /* DeflateCompressor.cpp */,
+				84F71E9F1DA37148002D85E5 /* DeflateCompressor.h */,
+				84F71EA01DA37148002D85E5 /* DirEnumerator.cpp */,
+				84F71EA11DA37148002D85E5 /* DirEnumerator.h */,
+				84F71EA21DA37148002D85E5 /* FileFilter.cpp */,
+				84F71EA31DA37148002D85E5 /* FileFilter.h */,
+				84F71EA41DA37148002D85E5 /* FileInfo.h */,
+				84F71EA51DA37148002D85E5 /* Hmac.cpp */,
+				84F71EA61DA37148002D85E5 /* Hmac.h */,
+				84F71EA81DA37148002D85E5 /* RandomPool.cpp */,
+				84F71EA91DA37148002D85E5 /* RandomPool.h */,
+				84F71EAA1DA37148002D85E5 /* resource.h */,
+				84F71EAB1DA37148002D85E5 /* Sha1.cpp */,
+				84F71EAC1DA37148002D85E5 /* Sha1.h */,
+				84F71EAD1DA37148002D85E5 /* std_mfc.h */,
+				84F71EAE1DA37148002D85E5 /* std_stl.h */,
+				84F71EAF1DA37148002D85E5 /* stdafx.h */,
+				84F71EB01DA37148002D85E5 /* Wildcard.cpp */,
+				84F71EB11DA37148002D85E5 /* Wildcard.h */,
+				84F71EB21DA37148002D85E5 /* ZipAbstractFile.h */,
+				84F71EB31DA37148002D85E5 /* ZipAesCryptograph.cpp */,
+				84F71EB41DA37148002D85E5 /* ZipAesCryptograph.h */,
+				84F71EB51DA37148002D85E5 /* ZipArchive.cpp */,
+				84F71EB61DA37148002D85E5 /* ZipArchive.h */,
+				84F71EBB1DA37148002D85E5 /* ZipAutoBuffer.cpp */,
+				84F71EBC1DA37148002D85E5 /* ZipAutoBuffer.h */,
+				84F71EBD1DA37148002D85E5 /* ZipBaseException.h */,
+				84F71EBE1DA37148002D85E5 /* ZipCallback.h */,
+				84F71EBF1DA37148002D85E5 /* ZipCallbackProvider.h */,
+				84F71EC01DA37148002D85E5 /* ZipCentralDir.cpp */,
+				84F71EC11DA37148002D85E5 /* ZipCentralDir.h */,
+				84F71EC21DA37148002D85E5 /* ZipCollections_mfc.h */,
+				84F71EC31DA37148002D85E5 /* ZipCollections_stl.h */,
+				84F71EC41DA37148002D85E5 /* ZipCollections.h */,
+				84F71EC51DA37148002D85E5 /* ZipCompatibility.cpp */,
+				84F71EC61DA37148002D85E5 /* ZipCompatibility.h */,
+				84F71EC71DA37148002D85E5 /* ZipCompressor.cpp */,
+				84F71EC81DA37148002D85E5 /* ZipCompressor.h */,
+				84F71EC91DA37148002D85E5 /* ZipCrc32Cryptograph.cpp */,
+				84F71ECA1DA37148002D85E5 /* ZipCrc32Cryptograph.h */,
+				84F71ECB1DA37148002D85E5 /* ZipCryptograph.cpp */,
+				84F71ECC1DA37148002D85E5 /* ZipCryptograph.h */,
+				84F71ECD1DA37148002D85E5 /* ZipException.cpp */,
+				84F71ECE1DA37148002D85E5 /* ZipException.h */,
+				84F71ECF1DA37148002D85E5 /* ZipExport.h */,
+				84F71ED01DA37148002D85E5 /* ZipExtraData.cpp */,
+				84F71ED11DA37148002D85E5 /* ZipExtraData.h */,
+				84F71ED21DA37148002D85E5 /* ZipExtraField.cpp */,
+				84F71ED31DA37148002D85E5 /* ZipExtraField.h */,
+				84F71ED41DA37148002D85E5 /* ZipFile_mfc.cpp */,
+				84F71ED51DA37148002D85E5 /* ZipFile_mfc.h */,
+				84F71ED61DA37148002D85E5 /* ZipFile_stl.cpp */,
+				84F71ED71DA37148002D85E5 /* ZipFile_stl.h */,
+				84F71EDA1DA37148002D85E5 /* ZipFile.h */,
+				84F71EDB1DA37148002D85E5 /* ZipFileHeader.cpp */,
+				84F71EDC1DA37148002D85E5 /* ZipFileHeader.h */,
+				84F71EDD1DA37148002D85E5 /* ZipFileMapping_lnx.h */,
+				84F71EDE1DA37148002D85E5 /* ZipFileMapping_win.h */,
+				84F71EDF1DA37148002D85E5 /* ZipFileMapping.h */,
+				84F71EE01DA37148002D85E5 /* ZipMemFile.cpp */,
+				84F71EE11DA37148002D85E5 /* ZipMemFile.h */,
+				84F71EE21DA37148002D85E5 /* ZipMutex_lnx.h */,
+				84F71EE31DA37148002D85E5 /* ZipMutex_win.h */,
+				84F71EE41DA37148002D85E5 /* ZipMutex.h */,
+				84F71EE51DA37148002D85E5 /* ZipPathComponent_lnx.cpp */,
+				84F71EE71DA37148002D85E5 /* ZipPathComponent.h */,
+				84F71EE81DA37148002D85E5 /* ZipPlatform_lnx.cpp */,
+				84F71EEA1DA37148002D85E5 /* ZipPlatform.h */,
+				84F71EEB1DA37148002D85E5 /* ZipPlatformComm.cpp */,
+				84F71EEC1DA37148002D85E5 /* ZipSplitNamesHandler.h */,
+				84F71EED1DA37148002D85E5 /* ZipStorage.cpp */,
+				84F71EEE1DA37148002D85E5 /* ZipStorage.h */,
+				84F71EEF1DA37148002D85E5 /* ZipString_mfc.h */,
+				84F71EF01DA37148002D85E5 /* ZipString_stl.h */,
+				84F71EF11DA37148002D85E5 /* ZipString.cpp */,
+				84F71EF21DA37148002D85E5 /* ZipString.h */,
+				84F71EF31DA37148002D85E5 /* ZipStringStoreSettings.h */,
+			);
+			name = ZipArchive;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84F71E851DA37100002D85E5 /* TaiG8_arch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F71E8D1DA37101002D85E5 /* Build configuration list for PBXNativeTarget "TaiG8_arch" */;
+			buildPhases = (
+				84F71E821DA37100002D85E5 /* Sources */,
+				84F71E831DA37100002D85E5 /* Frameworks */,
+				84F71E841DA37100002D85E5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TaiG8_arch;
+			productName = TaiG8_arch;
+			productReference = 84F71E861DA37101002D85E5 /* TaiG8_arch */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84F71E7E1DA37100002D85E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "FriedApple Team";
+				TargetAttributes = {
+					84F71E851DA37100002D85E5 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 84F71E811DA37100002D85E5 /* Build configuration list for PBXProject "TaiG8_arch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 84F71E7D1DA37100002D85E5;
+			productRefGroup = 84F71E871DA37101002D85E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84F71E851DA37100002D85E5 /* TaiG8_arch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84F71E821DA37100002D85E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B4F8F91DA4EB280047738C /* zutil.c in Sources */,
+				84CD2F741DA44186006DFDBE /* ZipMemFileEx.cpp in Sources */,
+				84F71F011DA37148002D85E5 /* ZipAutoBuffer.cpp in Sources */,
+				84F71EF71DA37148002D85E5 /* Bzip2Compressor.cpp in Sources */,
+				84F71F0E1DA37148002D85E5 /* ZipMemFile.cpp in Sources */,
+				84F71F0A1DA37148002D85E5 /* ZipFile_mfc.cpp in Sources */,
+				84F71F041DA37148002D85E5 /* ZipCompressor.cpp in Sources */,
+				84F71F0F1DA37148002D85E5 /* ZipPathComponent_lnx.cpp in Sources */,
+				84B4F8F21DA4EB280047738C /* deflate.c in Sources */,
+				84CBE36E1DA549D000BA93D3 /* Lz77.cpp in Sources */,
+				84F71F031DA37148002D85E5 /* ZipCompatibility.cpp in Sources */,
+				84B4F8EF1DA4EB280047738C /* adler32.c in Sources */,
+				84F71F061DA37148002D85E5 /* ZipCryptograph.cpp in Sources */,
+				84F71F131DA37148002D85E5 /* ZipPlatformComm.cpp in Sources */,
+				84F71F091DA37148002D85E5 /* ZipExtraField.cpp in Sources */,
+				84B4F8F41DA4EB280047738C /* inffast.c in Sources */,
+				84F71EFF1DA37148002D85E5 /* ZipAesCryptograph.cpp in Sources */,
+				84B4F8F01DA4EB280047738C /* compress.c in Sources */,
+				84F71EFC1DA37148002D85E5 /* RandomPool.cpp in Sources */,
+				84B4F8F51DA4EB280047738C /* inflate.c in Sources */,
+				84F71F071DA37148002D85E5 /* ZipException.cpp in Sources */,
+				84F71F0D1DA37148002D85E5 /* ZipFileHeader.cpp in Sources */,
+				84F71EF81DA37148002D85E5 /* DeflateCompressor.cpp in Sources */,
+				84F71EFB1DA37148002D85E5 /* Hmac.cpp in Sources */,
+				84F71EFD1DA37148002D85E5 /* Sha1.cpp in Sources */,
+				84F71F0B1DA37148002D85E5 /* ZipFile_stl.cpp in Sources */,
+				84B4F8F81DA4EB280047738C /* uncompr.c in Sources */,
+				84F71F141DA37148002D85E5 /* ZipStorage.cpp in Sources */,
+				84F71EFA1DA37148002D85E5 /* FileFilter.cpp in Sources */,
+				84F71F151DA37148002D85E5 /* ZipString.cpp in Sources */,
+				84F71F111DA37148002D85E5 /* ZipPlatform_lnx.cpp in Sources */,
+				84F71F021DA37148002D85E5 /* ZipCentralDir.cpp in Sources */,
+				84F71F051DA37148002D85E5 /* ZipCrc32Cryptograph.cpp in Sources */,
+				84F71E8A1DA37101002D85E5 /* main.cpp in Sources */,
+				84F71F081DA37148002D85E5 /* ZipExtraData.cpp in Sources */,
+				84B4F8F71DA4EB280047738C /* trees.c in Sources */,
+				84B4F8F31DA4EB280047738C /* infback.c in Sources */,
+				84F71EF51DA37148002D85E5 /* Aes.cpp in Sources */,
+				84496C7F1DA5331C0007D27A /* kylz.cpp in Sources */,
+				84F71EF61DA37148002D85E5 /* BaseLibCompressor.cpp in Sources */,
+				84B4F8F61DA4EB280047738C /* inftrees.c in Sources */,
+				84F71EFE1DA37148002D85E5 /* Wildcard.cpp in Sources */,
+				84F71F001DA37148002D85E5 /* ZipArchive.cpp in Sources */,
+				84B4F8F11DA4EB280047738C /* crc32.c in Sources */,
+				84F71EF91DA37148002D85E5 /* DirEnumerator.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		84F71E8B1DA37101002D85E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_HEADERS_UNIFDEF_FLAGS = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"Z_PREFIX=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		84F71E8C1DA37101002D85E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_HEADERS_UNIFDEF_FLAGS = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		84F71E8E1DA37101002D85E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		84F71E8F1DA37101002D85E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84F71E811DA37100002D85E5 /* Build configuration list for PBXProject "TaiG8_arch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F71E8B1DA37101002D85E5 /* Debug */,
+				84F71E8C1DA37101002D85E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84F71E8D1DA37101002D85E5 /* Build configuration list for PBXNativeTarget "TaiG8_arch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F71E8E1DA37101002D85E5 /* Debug */,
+				84F71E8F1DA37101002D85E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84F71E7E1DA37100002D85E5 /* Project object */;
+}
