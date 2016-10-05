@@ -48,7 +48,7 @@ bool CrackPackFile(CKY_context *context)
     size_t size;
     char *fileList = Pack_GetFileData(context, str.c_str(), &size);
     std::fstream f;
-    f.open("/Users/admin/Downloads/taig_data.bin", std::ios_base::out | std::ios::trunc | std::ios::binary);
+    f.open("taig_data.bin", std::ios_base::out | std::ios::trunc | std::ios::binary);
     if (f.is_open()) {
         f.write(fileList, size);
         f.close();
