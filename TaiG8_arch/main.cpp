@@ -13,7 +13,71 @@
 
 #include "kylz.h"
 
-char* Pack_GetFileData(CKY_context *context, const char *fileName, size_t *size)
+unsigned char signaturePackedTar[] = { 0xFF, 0xDD, 0xAA, 0x00, 0x88, 0x77, 0x00, 0x00, 0xC7, 0x01, 0x00, 0x00 };
+
+char * Pack_GetFileData(CKY_context *context, const char *fileName, size_t *size);
+
+class CKYTarFile : public CKYZipFile {
+public:
+    CKYTarFile(uint8_t *data, size_t size) {
+        m_data = data;
+        m_size = size;
+        m_nPos = 0;
+    }
+    virtual ~CKYTarFile() {}
+    virtual int Open()
+    {
+        return 0;
+    }
+    virtual int Read(void *lpBuf, UINT nCount)
+    {
+        if (nCount > m_size - m_nPos)
+            return 0;
+        memcpy(lpBuf, m_data + m_nPos, nCount);
+        m_nPos += nCount;
+        return nCount;
+    }
+    virtual size_t Write(void *lpBuf, UINT nCount)
+    {
+        // Not implemented
+        return 0;
+    }
+    virtual void Close() {
+        return;
+    }
+    virtual ZIP_FILE_USIZE Seekw(int lOff, int nFrom)
+    {
+        throw std::logic_error("Not implemented!");
+    }
+private:
+    uint8_t *m_data;
+    size_t m_size;
+    size_t m_nPos;
+};
+
+char * unpackTarFile(const char *fileName, char *data, size_t size, size_t *newSize)
+{
+    char tmpBuf[READ_BUFFER_SIZE];
+    CKYTarFile tarFilr((uint8_t*)data, (uint)size);
+    CKYCPS ckyCPS(fileName);
+    ckyCPS.Attach(&tarFilr, 1);
+    size_t uncompressSize = ckyCPS.GetUncompressSize();
+    *newSize = uncompressSize;
+    char *buffer = new char[uncompressSize];
+    char *ptr = buffer;
+    while (1) {
+        int read = ckyCPS.Read(tmpBuf, READ_BUFFER_SIZE);
+        if (read < 0)
+            break;
+        memcpy(ptr, tmpBuf, read);
+        if (read < READ_BUFFER_SIZE)
+            break;
+        ptr += read;
+    }
+    return buffer;
+}
+
+char * Pack_GetFileData(CKY_context *context, const char *fileName, size_t *size)
 {
     CZipArchive *zipArchive;
     char tmpBuf[READ_BUFFER_SIZE];
@@ -36,6 +100,13 @@ char* Pack_GetFileData(CKY_context *context, const char *fileName, size_t *size)
                 if (read < READ_BUFFER_SIZE)
                     break;
                 ptr += read;
+            }
+            // customization by in7egral (remove onion layer)
+            if (!memcmp(buffer, signaturePackedTar, sizeof(signaturePackedTar))) {
+                // unpack it too
+                char *data = unpackTarFile(fileName, buffer, *size, size);
+                delete [] buffer;
+                buffer = data;
             }
             return buffer;
         }
